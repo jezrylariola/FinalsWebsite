@@ -3,12 +3,12 @@
 
 * {
   box-sizing: border-box;
-  font-family: Garamond, serif;
+  font-family: Garamond;
 }
 
 body {
   margin: 0;
-  font-family: Garamond, serif;
+  font-family: Garamond;
 }
 
 
@@ -16,6 +16,7 @@ body {
   overflow: hidden;
   background-image: linear-gradient(darkblue, blue);
   font-size:1.3vw;
+  height:auto;
   
 }
 
@@ -43,6 +44,9 @@ background-image: linear-gradient(darkblue, blue);
 color: white;
 font-size: 1.5vw;
 }
+.historyPar{
+	margin:10px;
+}
 .strands{
 text-align: center;
 margin-left: 0px;
@@ -56,6 +60,8 @@ font-size: 1.5vw;
 }
 .title{
 	font-size: 2.5vw;
+	text-align: center;
+	font-family: Century Gothic;
 }
 .cclogo{
 	float: left;
@@ -105,31 +111,39 @@ color: white !important;
 }
 @media screen and (min-width: 320px) {
 	.navtable{
-		width: 40%;
+		width: 5%;
 	}
 	.cclogo{
-		width: 20;
-		height: 20;
+		max-width: 10px;
+		
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.navtable{
-		width: 0%;
+		width: 1%;
 	}
 	.cclogo{
-		width: 20;
-		height: 20;
+		max-width: 5px;
+	
 	}
 }
 
 @media screen and (min-width: 1024px){
 	.navtable{
-		width: 57%;
+		width: 43%;
 	}
 }
 
+.gallerydiv{
+	text-align: center;
+	margin:auto;
+	position: relative;
+}
+
 .mySlides {display: none;}
+.mySlides1 {display: none;}
+
 img {vertical-align: middle;}
 
 
@@ -197,3 +211,88 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+.body1 {
+	background: #000000;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.5vw;
+	font-family: 'Lato', Arial, sans-serif;
+	margin:0;
+	padding:0;
+	padding-bottom:60px;
+}
+.ccheader {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+.ccheader {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 3vw;
+	line-height: 1.3;
+}
+
+/* Form CSS*/
+.ccform {
+   margin: 0 auto;
+    width: 60%;
+}
+.ccfield-prepend{
+	margin-bottom:10px;
+	width:100%;
+}
+
+.ccform-addon{
+	color:#f8ae45; 
+	float:left;
+	padding:8px;
+	width:8%;
+	background:#FFFFFF;
+	text-align:center;	
+}
+
+.ccformfield {
+	color:#000000; 
+	background:#FFFFFF;
+	border:none;
+	padding:15.5px;
+	width:91.9%;
+	display:block;
+	font-family: 'Lato',Arial,sans-serif;
+	font-size:14px;
+}
+
+.ccformfield {
+	font-family: 'Lato',Arial,sans-serif;
+	width: 75%;
+}
+.ccbtn{
+	display:block;
+	border:none;
+	background:blue;
+	color:#FFFFFF;
+	padding:12px 25px;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ccbtn:hover{
+	background:#d8850e;
+
+
+

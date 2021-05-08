@@ -5,6 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css\css.css"> 
+<script src="javascript/js.js">
+</script>
 
 </head>
 <body>
@@ -29,42 +31,54 @@ Olongapo City Zambales</p>
 </div>
 
 
-<div>
-<article>
-<h1 class="title"> Columban's Annual Buwan ng Wika Celebration</h1>
-
-<section class="article">Columban College celebrate "Buwan ng Wika" as accordance to the declaration of the government. It celebrates the creation and the 
-declaration of the national language, which is Filipino. The Filipino department organize this event every year as a way of gving importance to this time.</section>
-<section style="text-align: center;">
-<table>
-<tr>
-<td style="text-align: center;">
-<img src="images/wika1.jpg" width="50%" height="auto">
-<img src="images/wika2.jpg" width="28%" height="auto">
-</td>
-</tr>
-</table>
-</section>
-<section class="article">
-The event includes cultural dances and cultural attires competition. Each program department and section get a chance to compete and show they're indigenous inspired outfit.
-</section>
-
-<section style="text-align: center;">
-<table>
-<tr>
-<td>
-<img src="images/wika.jpg" width="28%" height="auto">
-<img src="images/wika3.jpg" width="28%" height="auto">
-</td>
-</tr>
-</table>
-</section>
-<section class="article">
-One of the main event of the entire celebration is the "Mr. and Ms. Buwan ng Wika". The competing students are called Lakan for males and Lakambini for females.
-The winner will be decided through a voting system.
-</section>
-</article>
+<center>
+<h1 class="title">Buwan ng Wika (Pictures)</h1>
+<div class="gallery">
+  <img class="mySlides1" src="images/wika1.jpg" style="width:50%; height: 75%;">
+  <img class="mySlides1" src="images/wika4.jpg" style="width:50%; height: 75%;">
+  <img class="mySlides1" src="images/wika5.jpg" style="width:50%; height: 75%; ">
+    <img class="mySlides1" src="images/wika.jpg" style="width:30%; height: 50%;">
+  <img class="mySlides1" src="images/wika2.jpg" style="width:30%; height: 50%;">
+  <img class="mySlides1" src="images/wika3.jpg" style="width:30%; height: 50%; ">
+ 
+<div style="text-align: center;">
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
 </div>
+</div>
+
+
+ <h1 class="title"><a href="event2.html"><b>Click here to know more about the event.</b></a></h1>
+</center>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex); 
+
+function plusDivs1(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+
+
+
+
 
 <div class="info">
 <table class="infotable">
@@ -98,8 +112,6 @@ Email: info@columban.edu.ph</td>
 <div class="footer">
   <p style="text-align: center;">© 2018 Columban College, Inc.</p>
 </div>
-
-
 
 </body>
 </html>
