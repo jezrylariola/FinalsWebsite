@@ -295,13 +295,14 @@ img {vertical-align: middle;}
 	background:#d8850e;
 }
 
-#mySlides {
+#mySlides, #mySlides1 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 #mySlides:hover {opacity: 0.7;}
+#mySlides1:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
