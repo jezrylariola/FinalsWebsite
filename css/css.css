@@ -31,23 +31,48 @@ body {
   font-size: 1.5vw;
 }
 .navtable{
-	width: 57%;
+	width: 10%;
 }
 
 .about{ 
 background-color: white;
 float: right;
-font-size: 1.3vw;
+font-size: 1.8vw;
 margin:10px;
 padding: 10px;
+}
+.eventable{
+
+width: 35%;
+
+}
+.eventable1{
+
+text-align: center;
+}
+.columbano{
+	width: 25%;
 }
 .history{
 background-image: linear-gradient(darkblue, blue);
 color: white;
 font-size: 1.5vw;
+padding: 10px;
+}
+.admin1{
+background-image: linear-gradient(darkblue, blue);
+color: white;
+font-size: 1.5vw;
+padding: 10px;
 }
 .historyPar{
-	margin:10px;
+	margin:50px;
+	padding: 10px;
+}
+.historyPar1{
+	float:right;
+	margin-left:40px;
+	margin-right:40px;
 }
 .strands{
 text-align: center;
@@ -57,8 +82,13 @@ background-image: linear-gradient(darkblue, blue);
 color: white;
 font-size: 1.5vw;
 }
+.admin{
+   margin:10px;
+   font-size:1.5vw;
+}
 .article{
 	font-size: 2vw;
+	margin: 50px;
 }
 .title{
 	font-size: 2.5vw;
@@ -66,15 +96,17 @@ font-size: 1.5vw;
 	font-family: Century Gothic;
 }
 .cclogo{
-	float: left;
-	width:0%;
+	float: right;
+	width:90%;
 }
-
+.navtable1{
+	width:50%;
+}
 .events{
 background-image: linear-gradient(darkblue, blue);
 font-size: 2.5vw;
 color: white;
-padding: 10px;
+padding: 20px;
 }
 .container{
 	position:relative;
@@ -102,34 +134,138 @@ padding: 10px;
   color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
 	.navtable{
-		width: 50%;
+		width: 40%;
 	}
 	.cclogo{
-		width: 35;
-		height: 35;
+		width: 30%;
 	
 	}
+	.historyPar{
+		padding:5px;
+		font-size:2vw;
+	}
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
 	.navtable{
-		width: 5%;
+		width: 30%;
+	}
+	.topnav a{
+		font-size: 2vw;
 	}
 	.cclogo{
-		max-width: 10px;
+		width: 25%;
 		
 	}
+	.navtable1{
+		width:57%;
+	}
+	.title{
+		font-size: 3vw;
+	}
+	.columbano{
+		width:20%;
+	}
+	.about{
+		font-size: 3vw;
+		width: 90%;
+	}
+	.admin{
+		font-size: 3vw;
+	}
+	.admin1{
+		font-size: 3vw;
+	}
+	.article{
+		font-size: 3vw;
+		margin:30px;
+		
+	}
+	.events{
+		font-size: 3vw;
+	}
+	.historyPar{
+		
+		padding: 1px;
+		font-size: 3vw;
+	}
+	.picsevent{
+		width: 60%;
+		height:auto;
+	}
+	.infotable{
+		font-size: 2.5vw;
+		width: 90%;
+	}
+	.pics{
+		width: 25%;
+	}
+	.footer{
+		font-size: 2.5vw;
+}
+	
 }
 
 @media screen and (max-width: 320px) {
 	.navtable{
-		width: 1%;
+		width: 30%;
+	}
+	.navtable1{
+		width: 60%;
+	}
+	.topnav a{
+		font-size: 3vw;
+	}
+	.title{
+		font-size: 4vw;
 	}
 	.cclogo{
-		max-width: 5px;
+		width: 50%;
 	
 	}
+	.historyPar{
+		font-size: 4vw;
+	}
+	.historyPar1{
+		margin-left:20px;
+		margin-right:20px;
+	}
+	.columbano{
+		width:;
+	}
+	.admin{
+		font-size: 4vw;
+	}
+	.admin1{
+		font-size: 4vw;
+	}
+	.about{
+		font-size: 4vw;
+		width: 80%;
+	}
+	.events{
+		font-size: 4vw;
+	}
+	.article{
+		font-size: 4vw;
+		margin: 20px;
+	}
+	.picsevent{
+		width: 80%;
+		height: auto;
+	}
+	.infotable{
+		font-size: 3vw;
+		width: 50%;
+	}
+	.pics{
+		width: 80%;
+	}
+		.footer{
+		font-size: 3vw;
+}
+	
 }
 
 @media screen and (min-width: 1024px){
