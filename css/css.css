@@ -38,6 +38,7 @@ body {
 background-color: white;
 float: right;
 font-size: 1.3vw;
+margin:10px;
 }
 .history{
 background-image: linear-gradient(darkblue, blue);
