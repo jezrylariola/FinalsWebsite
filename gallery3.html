@@ -50,6 +50,12 @@ Olongapo City Zambales</p>
 
  <h1 class="title"><a href="event3.html"><b>Click here to know more about the event.</b></a></h1>
 </center>
+	
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div> 
 
 <script>
 var slideIndex = 1;
@@ -68,6 +74,33 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+	
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// select images by class name
+var img = document.getElementsByClassName("mySlides1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// show modal function
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
 }
 </script>
 
