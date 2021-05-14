@@ -59,6 +59,43 @@ function plusDivs1(n) {
   showDivs(slideIndex += n);
 }
 
+	
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+	
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// select images by class name
+var img = document.getElementsByClassName("mySlides1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// show modal function
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+		
+	
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides1");
