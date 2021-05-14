@@ -15,7 +15,7 @@
 <i>Christi Simus Non Nostri</i><br>
 Olongapo City Zambales</p>
 </td>
- <td > <a href="contact.html"><b>Contatct Info</b></a>
+ <td > <a href="contact.html"><b>Contact Info</b></a>
  <a href="new 1.html"><b>Gallery</b></a>
   <a href="programs.html"><b>Programs</b></a>
   <a href="admission.html"><b>Admission</b></a>
@@ -31,7 +31,7 @@ Olongapo City Zambales</p>
 <center>
 <h1 class="title">Palarong Columban (Pictures)</h1>
 <div class="gallery">
-  <img class="mySlides" id="img01" src="images/sportsfest.jpg" style="width:50%; height: 75%;">
+  <img class="mySlides"  src="images/sportsfest.jpg" style="width:50%; height: 75%;">
   <img class="mySlides" src="images/sportsfest4.jpg" style="width:50%; height: 75%;">
   <img class="mySlides" src="images/sportsfest1.jpg" style="width:50%; height: 75%; ">
   <img class="mySlides" src="images/sportsfest9.jpg" style="width:50%; height:75%;">
@@ -59,15 +59,16 @@ Olongapo City Zambales</p>
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("img01");
-var modalImg = document.getElementById("Modimg01");
+// select images by class name
+var img = document.getElementsByClassName('mySlides');
+var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img01.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+
+// show modal function
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
