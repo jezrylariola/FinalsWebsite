@@ -73,7 +73,8 @@ font-size: 1.5vw;
 .events{
 background-image: linear-gradient(darkblue, blue);
 font-size: 2.5vw;
-color: white !important;
+color: white;
+padding: 10px;
 }
 .container{
 	position:relative;
